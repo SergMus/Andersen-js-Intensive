@@ -16,6 +16,7 @@ const makeObjectDeepCopy = (obj) => {
 
 
 
+
 const selectFromInterval = (arr, num1, num2) => {
   if (!Array.isArray(arr) || typeof num1 != "number" || typeof num2 != "number")
     throw new Error("Ошибка!");
@@ -29,6 +30,7 @@ const selectFromInterval = (arr, num1, num2) => {
     return arr.filter((item) => item >= num1 && item <= num2);
   }
 };
+
 
 
 
