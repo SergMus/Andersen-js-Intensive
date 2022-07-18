@@ -13,7 +13,7 @@ function currying(fn) {
 
 function sumStr (...strs) {
     let separator = "", result = "";
-    
+
     for (let str of strs) {
         if (str[0] && typeof str[0] !== "string") 
         throw new Error('typeof of arguments isn`t a string!!!');
@@ -31,7 +31,6 @@ function sumStr (...strs) {
 let concatStrings = currying(sumStr);
 
 
-console.log(concatStrings('a')('b')('c'));
 
 
 
